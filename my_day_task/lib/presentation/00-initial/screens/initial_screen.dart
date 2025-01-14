@@ -10,7 +10,14 @@ class InitialScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Initial'),
+        child: Text(
+          'Initial',
+          style: TextStyle(
+              fontWeight: FontWeight.w700,
+              //fontStyle: FontStyle.italic,
+              fontFamily: 'Ubuntu',
+              fontSize: 70),
+        ),
       ),
     );
   }
