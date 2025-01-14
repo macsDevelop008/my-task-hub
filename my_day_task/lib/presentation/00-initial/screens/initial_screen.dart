@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_day_task/presentation/presentation.dart';
 
 class InitialScreen extends StatelessWidget {
   const InitialScreen({super.key});
@@ -8,16 +9,20 @@ class InitialScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text(
-          'Initial',
-          style: TextStyle(
-              fontWeight: FontWeight.w700,
-              //fontStyle: FontStyle.italic,
-              fontFamily: 'Ubuntu',
-              fontSize: 70),
-        ),
+    return Scaffold(
+      body: Stack(
+        alignment: Alignment.center,
+        children: [
+          //! Fondo
+          InitialBackgroundView(),
+          Text('data1'),
+          FloatingActionButton(
+            onPressed: () {},
+          )
+          //! Vista imagen animada
+          //! Vista texto información
+          //! Vista botones
+        ],
       ),
     );
   }
