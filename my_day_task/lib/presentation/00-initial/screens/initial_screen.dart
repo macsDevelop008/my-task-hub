@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:my_day_task/presentation/presentation.dart';
 
 class InitialScreen extends StatelessWidget {
@@ -15,10 +16,7 @@ class InitialScreen extends StatelessWidget {
         children: [
           //! Fondo
           InitialBackgroundView(),
-          Text('data1'),
-          FloatingActionButton(
-            onPressed: () {},
-          )
+
           //! Vista imagen animada
           //! Vista texto información
           //! Vista botones
